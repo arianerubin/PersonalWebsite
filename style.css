@@ -26,3 +26,19 @@ div {
 img {
   align-items: center;
 }
+
+section {
+  display: flexbox;
+  text-align: right;
+}
+
+h1 {
+  font-family: verdana;
+  color: rgb(4, 114, 77);
+  text-align: left;
+  margin-inline-start: 15%;
+}
+
+p.contact {
+  text-emphasis-color: green;
+}
