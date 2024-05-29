@@ -4,56 +4,68 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="javascript.js"></script>
-    <title>Document</title>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 30vh;
-      }
-    </style>
+    <title>Contact Me</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
-  <p class="Contact">Contact Me</p>
+
   <body>
-    <form action="/submit_form" method="post">
-      <label for="name">Name:</label><br />
-      <input
-        type="text"
-        id="name"
-        name="name"
-        placeholder="Enter your name"
-      /><br />
+    <!-- Persistent header -->
+    <header class="persistent-header">
+      <div class="header-content">
+        <h1>Ariane Rubin</h1>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <a href="portfolio.html">Portfolio</a>
+          <a href="Contact.html">Contact Me</a>
+        </nav>
+      </div>
+    </header>
+    <!-- Finish here -->
 
-      <label for="email">Email:</label><br />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-      /><br />
+    <div class="content">
+      <div class="form-container">
+        <form class="centered-form" action="success.html">
+          <h2>Contact Me</h2>
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+          /><br />
 
-      <label for="message">Message:</label><br />
-      <textarea
-        id="message"
-        name="message"
-        rows="4"
-        placeholder="Enter your message"
-      ></textarea
-      ><br />
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+          /><br />
 
-      <input type="submit" value="Submit" />
-    </form>
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            rows="8"
+            placeholder="Enter your message"
+          ></textarea
+          ><br />
 
-    <script>
-      document
-        .getElementById("form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
+          <input type="submit" value="Submit" />
+        </form>
 
-          window.location.href = this.action;
-        });
-    </script>
+        <script>
+          document
+            .getElementById("form")
+            .addEventListener("submit", function (event) {
+              event.preventDefault();
+
+              window.location.href = this.action;
+            });
+        </script>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,44 +1,109 @@
-h2 {
-  font-family: verdana;
-  color: rgb(4, 114, 77);
-  text-align: center;
+.persistent-header {
+  background: linear-gradient(to bottom left, #07cb83, #060955);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
-p {
-  font-family: verdana;
-}
-
-div {
-  width: 800px;
-  margin: auto;
-  background-color: white;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5px;
-  padding: 20px;
-}
-
-.backgroundbox {
-  width: 1000px;
-  background-color: rgb(4, 114, 77);
-}
-
-img {
+.header-content {
+  font-family: Verdana;
+  font-size: large;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
-section {
-  display: flexbox;
-  text-align: right;
-}
-
-h1 {
+.header-content h1 {
   font-family: verdana;
-  color: rgb(4, 114, 77);
-  text-align: left;
-  margin-inline-start: 15%;
+  color: white;
+  margin: 0;
 }
 
-p.contact {
-  text-emphasis-color: green;
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Persistent header finishes here */
+
+body {
+  background-image: url("background.avif");
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: round;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+
+  .content {
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+  h2 {
+    font-family: verdana;
+    color: rgb(4, 114, 77);
+    text-align: center;
+  }
+
+  p {
+    font-family: verdana;
+  }
+
+  section {
+    display: flexbox;
+    text-align: right;
+  }
+
+  h1 {
+    font-family: verdana;
+    color: rgb(4, 114, 77);
+    text-align: left;
+    margin-inline-start: 15%;
+  }
+
+  body {
+    background-size: 30%;
+  }
+
+  .success {
+    font-family: verdana;
+  }
+
+  /* 
+  this is for the "all boxes" now */
+  .div-index {
+    width: auto;
+    margin: auto;
+    background-color: white;
+    border-style: 2px solid black;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: verdana;
+  }
+
+  img {
+    align-items: center;
+  }
+
+  /* This is for the form box */
+  .form-container {
+    width: 50%;
+    margin: auto;
+    font-family: verdana;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 80px;
+    text-align: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
